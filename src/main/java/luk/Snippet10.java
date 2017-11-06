@@ -30,7 +30,7 @@ public class Snippet10 {
         System.out.println(service.sayHello());
     }
 
-    public LegacyService creeate() {
+    public LegacyService create() {
         return new LegacyService();
     }
 }
