@@ -1,7 +1,7 @@
 package luk;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.control.ActivateRequestContext;
+import javax.enterprise.context.control.RequestContextController;
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
 import javax.inject.Inject;
@@ -9,13 +9,13 @@ import javax.inject.Inject;
 import luk.model.RequestBean;
 
 @ApplicationScoped
-public class Snippet2 {
+public class Snippet3 {
 
     public static void main(String[] args) {
         SeContainer container = SeContainerInitializer.newInstance()
             .initialize();
 
-        Snippet2 snippet = container.select(Snippet2.class).get();
+        Snippet3 snippet = container.select(Snippet3.class).get();
         snippet.sayHi();
         snippet.sayHi();
 
@@ -24,9 +24,14 @@ public class Snippet2 {
 
     @Inject
     private RequestBean bean;
+    @Inject
+    private RequestContextController requestContextController;
 
-    @ActivateRequestContext
     public void sayHi() {
+        requestContextController.activate();
+
         System.out.println(bean.toString());
+
+        requestContextController.deactivate();
     }
 }

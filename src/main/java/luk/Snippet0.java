@@ -6,7 +6,7 @@ public class Snippet0 {
 
     }
 
-    private void sayHi() {
+    public void sayHi() {
         System.out.println("hi");
     }
 }

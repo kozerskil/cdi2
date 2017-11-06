@@ -15,7 +15,7 @@ public class Snippet1 {
         container.close();
     }
 
-    private void sayHi() {
+    public void sayHi() {
         System.out.println("hi");
     }
 }
