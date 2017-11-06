@@ -24,11 +24,4 @@ public class Snippet8 {
     public void sayHi() {
         System.out.println(service.sayHello());
     }
-//
-//    @Produces
-//    public Service createService(InterceptionFactory<Service> factory) {
-//        factory.configure().add(new AnnotationLiteral<Log>() {
-//        });
-//        return factory.createInterceptedInstance(new SimpleService());
-//    }
 }

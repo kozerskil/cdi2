@@ -1,8 +1,10 @@
-package luk.legacy;
+package luk.decorators;
 
 import javax.decorator.Decorator;
 import javax.decorator.Delegate;
 import javax.inject.Inject;
+
+import luk.legacy.Service;
 
 @Decorator
 public class ServiceDecorator implements Service {
@@ -13,6 +15,6 @@ public class ServiceDecorator implements Service {
 
     @Override
     public String sayHello() {
-        return "nice hello";
+        return "nice hello, but was: " + service.sayHello();
     }
 }
