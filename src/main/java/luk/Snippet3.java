@@ -30,7 +30,8 @@ public class Snippet3 {
     public void sayHi() {
         requestContextController.activate();
 
-        System.out.println(bean.toString());
+        System.out.println(bean.sayHello());
+        System.out.println(bean.sayHello());
 
         requestContextController.deactivate();
     }

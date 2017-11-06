@@ -27,6 +27,7 @@ public class Snippet2 {
 
     @ActivateRequestContext
     public void sayHi() {
-        System.out.println(bean.toString());
+        System.out.println(bean.sayHello());
+        System.out.println(bean.sayHello());
     }
 }
