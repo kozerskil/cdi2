@@ -8,16 +8,16 @@ import javax.inject.Inject;
 import luk.legacy.LegacyService;
 
 @ApplicationScoped
-public class Snippet9 {
+public class Snippet10 {
 
     public static void main(String[] args) {
         SeContainer container = SeContainerInitializer.newInstance()
             .disableDiscovery()
-            .addBeanClasses(Snippet9.class)
+            .addBeanClasses(Snippet10.class)
             .addBeanClasses(LegacyService.class)
             .initialize();
 
-        Snippet9 snippet = container.select(Snippet9.class).get();
+        Snippet10 snippet = container.select(Snippet10.class).get();
         snippet.sayHi();
 
         container.close();
