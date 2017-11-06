@@ -5,10 +5,10 @@
         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
         bean-discovery-mode="all">
 
-    <interceptors>
-        <class>luk.interceptors.LoggingInterceptor</class>
-    </interceptors>
-    <decorators>
-        <class>luk.model.ServiceDecorator</class>
-    </decorators>
+    <!--<interceptors>-->
+    <!--<class>luk.interceptors.LoggingInterceptor</class>-->
+    <!--</interceptors>-->
+    <!--<decorators>-->
+    <!--<class>luk.legacy.ServiceDecorator</class>-->
+    <!--</decorators>-->
 </beans>

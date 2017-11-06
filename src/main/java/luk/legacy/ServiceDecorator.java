@@ -1,10 +1,8 @@
-package luk.model;
+package luk.legacy;
 
 import javax.decorator.Decorator;
 import javax.decorator.Delegate;
 import javax.inject.Inject;
-
-import luk.interceptors.Service;
 
 @Decorator
 public class ServiceDecorator implements Service {

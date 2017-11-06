@@ -1,4 +1,4 @@
-package luk.interceptors;
+package luk.legacy;
 
 public interface Service {
 

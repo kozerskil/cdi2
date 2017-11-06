@@ -7,6 +7,8 @@ public class Snippet1 {
 
     public static void main(String[] args) {
         SeContainer container = SeContainerInitializer.newInstance()
+            .disableDiscovery()
+            .addBeanClasses(Snippet1.class)
             .initialize();
 
         Snippet1 snippet = container.select(Snippet1.class).get();

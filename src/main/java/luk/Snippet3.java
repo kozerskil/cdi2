@@ -13,6 +13,9 @@ public class Snippet3 {
 
     public static void main(String[] args) {
         SeContainer container = SeContainerInitializer.newInstance()
+            .disableDiscovery()
+            .addBeanClasses(Snippet3.class)
+            .addBeanClasses(RequestBean.class)
             .initialize();
 
         Snippet3 snippet = container.select(Snippet3.class).get();

@@ -1,4 +1,4 @@
-package luk.interceptors;
+package luk.legacy;
 
 public class SimpleService implements Service {
 
