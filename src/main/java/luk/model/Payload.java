@@ -11,4 +11,9 @@ public class Payload {
     public String sayHello() {
         return "hi from " + name + "on " + Thread.currentThread().getName();
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
